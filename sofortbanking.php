@@ -56,8 +56,8 @@ class Sofortbanking extends PaymentModule
 		$this->controllers = array('payment');
 		parent::__construct();
 		$this->page = basename(__FILE__, '.php');
-		$this->displayName = $this->l('sofortbanking');
-		$this->description = $this->l('SOFORT Banking - Your economic payment system. Recommended by merchants.');
+		$this->displayName = $this->l('SOFORT');
+		$this->description = $this->l('SOFORT -  online direct payment method. More than 35,000 merchants in Europe trust SOFORT.');
 		$this->confirmUninstall = $this->l('Are you sure you want to delete your details?');
 		/* Backward compatibility */
 		if (version_compare(_PS_VERSION_, '1.5', '<'))
@@ -108,11 +108,11 @@ class Sofortbanking extends PaymentModule
 		if (Tools::getValue('submitUpdate'))
 		{
 			if (!Tools::getValue('SOFORTBANKING_USER_ID'))
-				$this->_errors[] = $this->l('sofortueberweisung "user id" is required.');
+				$this->_errors[] = $this->l('SOFORT "user id" is required.');
 			if (!Tools::getValue('SOFORTBANKING_PROJECT_ID'))
-				$this->_errors[] = $this->l('sofortueberweisung "project id" is required.');
+				$this->_errors[] = $this->l('SOFORT "project id" is required.');
 			if (!Tools::getValue('SOFORTBANKING_PROJECT_PW'))
-				$this->_errors[] = $this->l('sofortueberweisung "project password" is required.');
+				$this->_errors[] = $this->l('SOFORT "project password" is required.');
 		}
 	}
 
@@ -255,10 +255,10 @@ class Sofortbanking extends PaymentModule
 
 		if (Tools::strtolower(Configuration::get('SOFORTBANKING_CPROTECT')) == 'y' && Tools::strtolower($lang) == 'de')
 			$result = array_merge($result, array('logo' => $this->_path.'img/'.$lang.'/banner_400x100_ks.png',
-					'cta_text' => $this->l('Buy secure with customer protection by sofortbanking')));
+					'cta_text' => $this->l('Shop safely with buyer protection by Deutsche Handelsbank')));
 		else
 			$result = array_merge($result, array('logo' => $this->_path.'img/'.$lang.'/banner_300x100.png',
-					'cta_text' => $this->l('Pay easy and secure with SOFORT Banking.')));
+					'cta_text' => $this->l('Pay with SOFORT.')));
 
 		return $result;
 	}
@@ -348,7 +348,7 @@ class Sofortbanking extends PaymentModule
 			'user_id' => Configuration::get('SOFORTBANKING_USER_ID'),'project_id' => Configuration::get('SOFORTBANKING_PROJECT_ID'),
 			'sender_holder' => '','','','sender_country_id' => $country->iso_code,
 			'amount' => number_format($cart->getOrderTotal(), 2, '.', ''),
-			'currency_id' => $currency->iso_code,'reason_1' => $this->l('CartId:').' '.time().'-'.(int)$cart->id,
+			'currency_id' => $currency->iso_code,'reason_1' => $this->l('Cart-ID:').' '.time().'-'.(int)$cart->id,
 			'reason_2' => $customer->firstname.' '.Tools::ucfirst(Tools::strtolower($customer->lastname)),
 			'user_variable_0' => $customer->secure_key,'user_variable_1' => (int)$cart->id,
 			'user_variable_2' => '','user_variable_3' => '','user_variable_4' => '','user_variable_5' => '',

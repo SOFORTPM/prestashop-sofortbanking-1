@@ -75,7 +75,7 @@ if (($order_state == Configuration::get('SOFORTBANKING_OS_ACCEPTED') && Configur
 {
 	if (!Order::getOrderByCartId($cart->id))
 		$sofortbanking->validateOrder($cart->id, $order_state, (float)number_format($cart->getOrderTotal(true, 3), 2, '.', ''),
-			$sofortbanking->displayName, $sofortbanking->l('Directebanking transaction id: ').Tools::getValue('transaction'),
+			$sofortbanking->displayName, $sofortbanking->l('SOFORT transaction ID: ').Tools::getValue('transaction'),
 			null, null, false, $customer->secure_key, null);
 	else
 	{

@@ -39,7 +39,7 @@
 }
 </style>
 
-{capture name=path}{l s='sofortbanking payment' mod='sofortbanking'}{/capture}
+{capture name=path}{l s='Pay with SOFORT' mod='sofortbanking'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
 <h2>{l s='Order summary' mod='sofortbanking'}</h2>
@@ -51,9 +51,9 @@
 	<p class="warning">{l s='Your shopping cart is empty.' mod='sofortbanking'}</p>
 {else}
 
-<h3>{l s='sofortbanking payment' mod='sofortbanking'}</h3>
+<h3>{l s='Pay with SOFORT' mod='sofortbanking'}</h3>
 
-<p>{l s='Please wait a moment, redirect to soforbanking is in progress...' mod='sofortbanking'}</p>
+<p>{l s='Please wait a moment, redirect to SOFORT is in progress...' mod='sofortbanking'}</p>
 
 <form action="{$gateway|escape:'htmlall':'UTF-8'}" method="post" name="mod_sofortbanking" class="hidden">
 	<input type="hidden" name="user_id" value="{$parameters.user_id|escape:'htmlall':'UTF-8'}" />

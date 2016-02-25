@@ -39,7 +39,7 @@
 }
 </style>
 
-{capture name=path}{l s='sofortbanking payment' mod='sofortbanking'}{/capture}
+{capture name=path}{l s='Pay with SOFORT' mod='sofortbanking'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
 <h2>{l s='Order summary' mod='sofortbanking'}</h2>
@@ -51,7 +51,7 @@
 	<p class="warning">{l s='Your shopping cart is empty.' mod='sofortbanking'}</p>
 {else}
 
-<h3>{l s='sofortbanking payment' mod='sofortbanking'}</h3>
+<h3>{l s='Pay with SOFORT' mod='sofortbanking'}</h3>
 
 <form action="{$gateway|escape:'htmlall':'UTF-8'}" method="post">
 
@@ -72,12 +72,12 @@
 	<input type="hidden" name="hash" value="{$hash|escape:'htmlall':'UTF-8'}" />
 	<input type="hidden" name="interface_version" value="PrestaShop {$version|escape:'htmlall':'UTF-8'}" />
 
-	<p><img src="{$this_path|escape:'htmlall':'UTF-8'}img/{$mod_lang|escape:'htmlall':'UTF-8'}/sofortbanking_small.png" alt="sofortbanking.png" title="" width="100" height="38" /></p>
+	<p><img src="https://images.sofort.com/{$mod_lang|escape:'htmlall':'UTF-8'}/su/logo_155x50.png" alt="sofortbanking.png" title="" width="100" height="38" /></p>
 	
-	<p>{l s='SOFORT Banking - Online payments made easy.' mod='sofortbanking'}</p>
-	<p>{l s='With the TÜV-certified, international direct payment system SOFORT Banking.' mod='sofortbanking'} <a target="_blank" href="https://documents.sofort.com/de/sue/kundeninformationen">{l s='Read more.' mod='sofortbanking'}</a>
+	<p>{l s='SOFORT - Online payments made easy.' mod='sofortbanking'}</p>
+	<p>{l s='With the TÜV-certified, international direct payment system SOFORT.' mod='sofortbanking'} <a target="_blank" href="{l s='https://documents.sofort.com/sb/customer-information/' mod='sofortbanking'}">{l s='Read more.' mod='sofortbanking'}</a>
 	
-	<p>{l s='You have chosen to pay by sofortbanking.' mod='sofortbanking'} {l s='the total amount of your order is' mod='sofortbanking'} <span id="amount" class="price">{displayPrice price=$total}</span> {l s='(tax incl.)' mod='sofortbanking'}</p>
+	<p>{l s='You have chosen to pay by SOFORT.' mod='sofortbanking'} {l s='the total amount of your order is' mod='sofortbanking'} <span id="amount" class="price">{displayPrice price=$total}</span> {l s='(tax incl.)' mod='sofortbanking'}</p>
 	<p style="margin-top:20px;"><b>{l s='Please confirm your order by clicking \'I confirm my order\'.' mod='sofortbanking'}</b></p>
 
 	<p class="cart_navigation">

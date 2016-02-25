@@ -27,13 +27,23 @@
  *}
 
 <p class="payment_module">
-	<a href="{if method_exists('Link','getModuleLink')}{$link->getModuleLink('sofortbanking', 'payment', ['token' => $static_token])}{else}{$this_path_ssl|escape:'htmlall':'UTF-8'}payment.php?token={$static_token|escape:'htmlall':'UTF-8'}{/if}" title="{l s='Pay with sofortbanking' mod='sofortbanking'}">
+	<a href="{if method_exists('Link','getModuleLink')}{$link->getModuleLink('sofortbanking', 'payment', ['token' => $static_token])}{else}{$this_path_ssl|escape:'htmlall':'UTF-8'}payment.php?token={$static_token|escape:'htmlall':'UTF-8'}{/if}" title="{l s='Pay with SOFORT' mod='sofortbanking'}">
 	{if $cprotect == "Y" && $lang_iso == "de"}
-		<img src="{$module_template_dir|escape:'htmlall':'UTF-8'}img/{$mod_lang|escape:'htmlall':'UTF-8'}/banner_400x100_ks.png" alt="banner_400x100_ks.png" title="{l s='Buy secure with customer protection by sofortbanking' mod='sofortbanking'}" width="400" height="100" />
-		{l s='Buy secure with customer protection by sofortbanking' mod='sofortbanking'}
+		<img src="https://images.sofort.com/{$mod_lang|escape:'htmlall':'UTF-8'}/su/banner_400x100_ks.png" alt="banner_400x100_ks.png" title="{l s='Shop safely with buyer protection by Deutsche Handelsbank' mod='sofortbanking'}" width="400" height="100" />
+		{l s='Shop safely with buyer protection by Deutsche Handelsbank' mod='sofortbanking'}
+	{elseif $cprotect == "N" && $lang_iso == "de"}
+	                <img src="https://images.sofort.com/{$mod_lang|escape:'htmlall':'UTF-8'}/su/banner_300x100.png" alt="banner_300x100.png" title="{l s='Pay easy and secure with SOFORT.' mod='sofortbanking'}" width="300" height="100" />
+			                {l s='SOFORT - Online payments made easy.' mod='sofortbanking'}
+	{elseif $lang_iso == "en"}
+                        <img src="https://images.sofort.com/{$mod_lang|escape:'htmlall':'UTF-8'}/su/banner_300x100.png" alt="banner_300x100.png" title="{l s='Pay easy and secure with SOFORT.' mod='sofortbanking'}" width="300" height="100" />
+			                                        {l s='SOFORT - Online payments made easy.' mod='sofortbanking'}
+	{elseif $lang_iso == "es"}
+                        <img src="https://images.sofort.com/{$mod_lang|escape:'htmlall':'UTF-8'}/sb/100x38.png" alt="banner_300x100.png" title="{l s='Pay easy and secure with SOFORT.' mod='sofortbanking'}" width="100" height="38" />
+			                                                                <br><b>Transferencia bancaria directa online</b><br>Pague en 3 simples pasos con su Banca Online.</a>
 	{else}
-		<img src="{$module_template_dir|escape:'htmlall':'UTF-8'}img/{$mod_lang|escape:'htmlall':'UTF-8'}/banner_300x100.png" alt="banner_300x100.png" title="{l s='Pay easy and secure with SOFORT Banking.' mod='sofortbanking'}" width="300" height="100" />
-		{l s='Pay easy and secure with SOFORT Banking.' mod='sofortbanking'}
+		<img src="https://images.sofort.com/{$mod_lang|escape:'htmlall':'UTF-8'}/sb/banner_300x100.png" alt="banner_300x100.png" title="{l s='Pay easy and secure with SOFORT.' mod='sofortbanking'}" width="300" height="100" />
+
+		{l s='SOFORT - Online payments made easy.' mod='sofortbanking'}
 	{/if}
 	<br class="clear" />
 	</a>
