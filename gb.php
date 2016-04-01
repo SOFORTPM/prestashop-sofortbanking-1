@@ -10,7 +10,7 @@ $_MODULE['<{sofortbanking}prestashop>sofortbanking_34c32843d334dd45babe605fa104f
 $_MODULE['<{sofortbanking}prestashop>sofortbanking_03238c51b2998ee34fd259f7cdd663d0'] = 'SOFORT \"project password\" is required.';
 $_MODULE['<{sofortbanking}prestashop>sofortbanking_c888438d14855d7d96a2724ee9c306bd'] = 'Settings updated';
 $_MODULE['<{sofortbanking}prestashop>sofortbanking_170149a92b2369179bf59bbd535d2f03'] = 'Cart-ID:';
-$_MODULE['<{sofortbanking}prestashop>validation_cc638b4907ba6355753034f409a9d198'] = 'SOFORT transaction ID';
+$_MODULE['<{sofortbanking}prestashop>validation_cc638b4907ba6355753034f409a9d198'] = 'SOFORT transaction ID:';
 $_MODULE['<{sofortbanking}prestashop>validation_fcbea145650164a544da186fdf453836'] = 'Change order state by SOFORT notification for transaction id:';
 $_MODULE['<{sofortbanking}prestashop>display_form_0f514fb73bd53f40989bcb68e32d7afa'] = 'About SOFORT';
 $_MODULE['<{sofortbanking}prestashop>display_form_915f879e097a04f65070e0c5c99ae113'] = 'SOFORT is the direct payment system provided by SOFORT GmbH. SOFORT allows buyers to make a wire transfer of the respective amount during the order process using their online banking account. You as a merchant will receive a real-time confirmation after the SOFORT transaction has been completed. This enables you to immediately ship goods on stock and digital goods - and the buyer will receive the purchased items faster. Learn more about SOFORT and SOFORT GmbH at';
@@ -27,6 +27,7 @@ $_MODULE['<{sofortbanking}prestashop>display_form_0460817770faafdd4fca012a46a9ef
 $_MODULE['<{sofortbanking}prestashop>display_form_429e6f2cf4af25753fe27adbc5def9ec'] = 'Cancellation-Link (return to shop):';
 $_MODULE['<{sofortbanking}prestashop>display_form_e722d72b214116587e4e6082588df694'] = 'Confirmation-URL (HTTP-notification):';
 $_MODULE['<{sofortbanking}prestashop>display_form_f99e79a7210477b35ca277a786b1ffff'] = '(method POST)';
+$_MODULE['<{sofortbanking}prestashop>display_form_d19723cd3de5f95c768ad468eea24d2b'] = 'Please generate a project and a notification password in the corresponding menu entry at SOFORT and make sure that the hash algorithm \"SHA1\" is selected.';
 $_MODULE['<{sofortbanking}prestashop>display_form_b04f2c8a90cfc485fc990dc8dc4ba293'] = 'Module configuration';
 $_MODULE['<{sofortbanking}prestashop>display_form_acc316cbdee7e34a0ba391715b27c7e0'] = 'Please store your SOFORT project data and passwords in the following fields:';
 $_MODULE['<{sofortbanking}prestashop>display_form_14dec8bb8ffa34a52b0c38a8bfefb3a3'] = 'Customer number:';
@@ -65,6 +66,7 @@ $_MODULE['<{sofortbanking}prestashop>payment_execution_f1d3b424cd68795ecaa552883
 $_MODULE['<{sofortbanking}prestashop>payment_execution_879f6b8877752685a966564d072f498f'] = 'Your shopping cart is empty.';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_d21f6083263df8b02158f303e6bd7c54'] = 'SOFORT - Online payments made easy.';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_5c48e9dbf7bde1a61d5bfdae5cdd5a7d'] = 'With the TÜV-certified, international direct payment system SOFORT.';
+$_MODULE['<{sofortbanking}prestashop>payment_execution_54a8498c938b3a0569adafc680588b45'] = 'https://documents.sofort.com/sb/customer-information/';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_b459d7e1103a33f6790ca26c05b99715'] = 'Read more.';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_6af381041f6fb0734eac4b0964d827e8'] = 'You have chosen to pay by SOFORT.';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_167add1e8662b28f92fd0ab08e3c5ff5'] = 'The total amount of your order is';
