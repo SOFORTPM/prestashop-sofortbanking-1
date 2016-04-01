@@ -27,7 +27,7 @@ $_MODULE['<{sofortbanking}prestashop>display_form_0460817770faafdd4fca012a46a9ef
 $_MODULE['<{sofortbanking}prestashop>display_form_429e6f2cf4af25753fe27adbc5def9ec'] = 'Odkaz o prerušení (návrat do e-shopu):';
 $_MODULE['<{sofortbanking}prestashop>display_form_e722d72b214116587e4e6082588df694'] = 'Potvrdzovacia URL (notifikácia HTTP):';
 $_MODULE['<{sofortbanking}prestashop>display_form_f99e79a7210477b35ca277a786b1ffff'] = '(Metóda POST)';
-$_MODULE['<{sofortbanking}prestashop>display_form_d19723cd3de5f95c768ad468eea24d2b'] = 'Vygenerujte prosím okrem toho heslo pre projekt a heslo pre notifikácie v príslušnom menu SOFORT a dbajte na to, aby bol zvolený hash algoritmus \\\"SHA1\\\".';
+$_MODULE['<{sofortbanking}prestashop>display_form_d19723cd3de5f95c768ad468eea24d2b'] = 'Vygenerujte prosím okrem toho heslo pre projekt a heslo pre notifikácie v príslušnom menu SOFORT a dbajte na to, aby bol zvolený hash algoritmus \"SHA1\".';
 $_MODULE['<{sofortbanking}prestashop>display_form_b04f2c8a90cfc485fc990dc8dc4ba293'] = 'Konfigurácia modulu';
 $_MODULE['<{sofortbanking}prestashop>display_form_acc316cbdee7e34a0ba391715b27c7e0'] = 'Do nasledujúcich políčok zadajte, prosím, Vaše údaje a heslá pre SOFORT projekt:';
 $_MODULE['<{sofortbanking}prestashop>display_form_14dec8bb8ffa34a52b0c38a8bfefb3a3'] = 'Číslo zákazníka:';
