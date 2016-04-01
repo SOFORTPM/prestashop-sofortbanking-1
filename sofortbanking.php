@@ -57,7 +57,7 @@ class Sofortbanking extends PaymentModule
 		parent::__construct();
 		$this->page = basename(__FILE__, '.php');
 		$this->displayName = $this->l('SOFORT');
-		$this->description = $this->l('SOFORT -  online direct payment method. More than 35,000 merchants in Europe trust SOFORT.');
+		$this->description = $this->l('SOFORT - online direct payment method. More than 35,000 merchants in Europe trust SOFORT.');
 		$this->confirmUninstall = $this->l('Are you sure you want to delete your details?');
 		/* Backward compatibility */
 		if (version_compare(_PS_VERSION_, '1.5', '<'))
