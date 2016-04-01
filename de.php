@@ -88,4 +88,4 @@ $_MODULE['<{sofortbanking}prestashop>payment_return_64430ad2835be8ad60c59e7d44e4
 $_MODULE['<{sofortbanking}prestashop>payment_a2019640145255c2f30da56cc105a6ae'] = 'Zahlen mit SOFORT Überweisung';
 $_MODULE['<{sofortbanking}prestashop>payment_2b1c9e27860242f13416834d05fe38c8'] = 'Kaufen mit dem Käuferschutz der Deutschen Handelsbank';
 $_MODULE['<{sofortbanking}prestashop>payment_d24cb8bd72f6ec2f7581dc1c3f84f3f2'] = 'Einfach und sicher bezahlen mit SOFORT Überweisung.';
-$_MODULE['<{sofortbanking}prestashop>payment_c09d9140e34eae4982359bf3a8a8b792'] = 'SOFORT Überweisung  Einfach sicher zahlen.';
+$_MODULE['<{sofortbanking}prestashop>payment_c09d9140e34eae4982359bf3a8a8b792'] = 'SOFORT Überweisung - Einfach sicher zahlen.';
