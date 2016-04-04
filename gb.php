@@ -27,7 +27,6 @@ $_MODULE['<{sofortbanking}prestashop>display_form_0460817770faafdd4fca012a46a9ef
 $_MODULE['<{sofortbanking}prestashop>display_form_429e6f2cf4af25753fe27adbc5def9ec'] = 'Cancellation-Link (return to shop):';
 $_MODULE['<{sofortbanking}prestashop>display_form_e722d72b214116587e4e6082588df694'] = 'Confirmation-URL (HTTP-notification):';
 $_MODULE['<{sofortbanking}prestashop>display_form_f99e79a7210477b35ca277a786b1ffff'] = '(method POST)';
-$_MODULE['<{sofortbanking}prestashop>display_form_d19723cd3de5f95c768ad468eea24d2b'] = 'Please generate a project and a notification password in the corresponding menu entry at SOFORT and make sure that the hash algorithm \"SHA1\" is selected.';
 $_MODULE['<{sofortbanking}prestashop>display_form_b04f2c8a90cfc485fc990dc8dc4ba293'] = 'Module configuration';
 $_MODULE['<{sofortbanking}prestashop>display_form_acc316cbdee7e34a0ba391715b27c7e0'] = 'Please store your SOFORT project data and passwords in the following fields:';
 $_MODULE['<{sofortbanking}prestashop>display_form_14dec8bb8ffa34a52b0c38a8bfefb3a3'] = 'Customer number:';
@@ -66,7 +65,6 @@ $_MODULE['<{sofortbanking}prestashop>payment_execution_f1d3b424cd68795ecaa552883
 $_MODULE['<{sofortbanking}prestashop>payment_execution_879f6b8877752685a966564d072f498f'] = 'Your shopping cart is empty.';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_d21f6083263df8b02158f303e6bd7c54'] = 'SOFORT - Online payments made easy.';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_5c48e9dbf7bde1a61d5bfdae5cdd5a7d'] = 'With the TÜV-certified, international direct payment system SOFORT.';
-$_MODULE['<{sofortbanking}prestashop>payment_execution_54a8498c938b3a0569adafc680588b45'] = 'https://documents.sofort.com/sb/customer-information/';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_b459d7e1103a33f6790ca26c05b99715'] = 'Read more.';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_6af381041f6fb0734eac4b0964d827e8'] = 'You have chosen to pay by SOFORT.';
 $_MODULE['<{sofortbanking}prestashop>payment_execution_167add1e8662b28f92fd0ab08e3c5ff5'] = 'The total amount of your order is';
